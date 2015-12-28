@@ -1,0 +1,12 @@
+
+types {
+    text/css                              css;
+    text/html                             html htm;
+    text/plain                            txt;
+    text/xml                              xml;
+
+    application/javascript                js;
+    application/json                      json;
+    application/xhtml+xml                 xhtml;
+    application/zip                       zip;
+}
