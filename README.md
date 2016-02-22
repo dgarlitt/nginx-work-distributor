@@ -33,12 +33,14 @@ echo "include distributor/global.conf;" > nginx.conf
 ## Logging
 In `global.conf` the `access_log` is turned off,
 which disables the writing of access logs for all
-routes. This was done to reduce disk I/O from
-potentially superfluous logging.
+routes. Though having the access log disabled
+definitely reduces disk I/O, it is likely that you
+will want to turn it back on for monitoring. Below
+are some of the possible configurations.
 
 ### Alternative Access Log Configurations
-Access logs may be an important source of
-information for you and, when enabled, can be tuned
+Access logs are often an important source of
+information and, when enabled, can be tuned
 to perform better. Listed below are some additional options for getting better performance from the
 `access_log` directive.
 [See the NGINX docs for more info](http://nginx.org/en/docs/http/ngx_http_log_module.html#access_log)
